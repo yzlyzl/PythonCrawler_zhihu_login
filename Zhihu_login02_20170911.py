@@ -58,7 +58,7 @@ def get_xsrf():
     # 这里的_xsrf 返回的是一个list
     _xsrf = re.findall(pattern, html)
     return _xsrf[0]
-
+    # 实际情况找不到_xsrf，soup和最初www.zhihu.com的Response结果不同
 
 # 获取验证码
 def get_captcha():
